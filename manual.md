@@ -3,7 +3,7 @@
 **Play any scale on the white keys.** A MIDI effect for Linux: the white keys play the
 notes of the scale you pick, the black keys are silent, and the scale's root sits on middle C.
 
-Version 0.1.4. To install it, see the [README](README.md).
+Version 0.1.5. To install it, see the [README](README.md).
 
 ## Getting started
 
@@ -30,7 +30,7 @@ Choose a KEY and a SCALE, then play the white keys from middle C upwards. That's
 
 The status line in the header says what middle C plays and the scale, for example
 `C3 = F · F minor`, or `bypassed` when the power switch is off. The version is in the bottom-right
-corner, and clicking the logo opens this page.
+corner, and clicking the logo opens [the plugin's page](https://rmnhofma.github.io/plugins/easymodebtw/).
 
 ## How to use it
 
