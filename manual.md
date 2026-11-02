@@ -3,7 +3,7 @@
 **Play any scale on the white keys.** A MIDI effect for Linux: the white keys play the
 notes of the scale you pick, the black keys are silent, and the scale's root sits on middle C.
 
-Version 0.1.3. To install it, see the [README](README.md).
+Version 0.1.4. To install it, see the [README](README.md).
 
 ## Getting started
 
