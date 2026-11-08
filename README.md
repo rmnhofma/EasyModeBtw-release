@@ -5,12 +5,12 @@ the white keys play the notes of the scale you pick with its root on middle C, a
 play a chord of the scale instead, strummed like a guitar or broken into an arpeggio on the beat.
 CLAP for Linux.
 
-![EasyModeBtw in F minor playing triads strummed over 60 ms, with the chords on the key map](images/screenshot.png)
+![EasyModeBtw's PLAY page in F minor: a white key fanning out into a chord, the chords before it rising above](images/screenshot.png)
 
 Pick F minor, and the white keys from C3 upwards play F G Ab Bb C Db Eb F. Put EasyModeBtw in
 front of any instrument and you can't play a wrong note. Turn on CHORDS and every white key plays
-the scale's chord on its note, voiced to move smoothly from the last one; turn on the strum or the
-ARP and those chords come out one note at a time. It works like the Easy Mode of Native
+the scale's chord on its note; turn on the strum or the ARP and those chords come out one note at
+a time. It works like the Easy Mode of Native
 Instruments' Smart Play. It has no audio inputs or outputs: it only rewrites MIDI notes.
 
 It runs natively on Linux, with no network access and no telemetry.
@@ -23,7 +23,7 @@ It runs natively on Linux, with no network access and no telemetry.
 - **Chords on every key:** Triads, Sevenths, Sus2, Sus4, Add9 or Power, or the chord Jazz, Bossa, Soul or Folk most often puts on that note. The black keys play borrowed major chords.
 - **A key map that suggests:** each key names the chord it plays, and three good chords to play next light up.
 - **Strum:** a chord's notes start one after another, up to 100 ms, up and down in turn or one way, voiced close or as a guitar grips it. No added latency.
-- **Arpeggiator on the host's beat:** eight patterns, from Up and Down to a pop-piano figure, 1/4 to 1/32 with dotted and triplet rates, up to 4 repeats climbing an octave or up the scale, HOLD, and a 16-step rhythm ring with rhythm presets.
+- **Arpeggiator on the host's beat:** eight patterns, from Up and Down to a pop-piano figure, 1/4 to 1/32 with dotted and triplet rates, up to 4 repeats climbing an octave or up the scale, stairs that show what it plays, HOLD on a sustain pedal, and a 16-step rhythm ring with a shelf of rhythms.
 - **See what you play:** the PLAY page draws a thread from every key you hold to the notes it sends. Click the keys with the mouse to try everything without a keyboard.
 - **No stuck notes:** a note-off always ends the notes its note-on started, even if you change the key, scale or chords while holding it.
 - **Everything else passes through:** pitch bend, mod wheel and other CCs, channel pressure and program changes are untouched.
@@ -36,10 +36,10 @@ Download the latest version from the [Releases page](https://github.com/rmnhofma
 or with these commands:
 
 ```bash
-curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.0.0/EasyModeBtw-1.0.0-linux-x86_64.tar.gz
-curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.0.0/EasyModeBtw-1.0.0-linux-x86_64.tar.gz.sha256
-sha256sum -c EasyModeBtw-1.0.0-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.0.0-linux-x86_64.tar.gz
-cd EasyModeBtw-1.0.0-linux-x86_64
+curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.1.0/EasyModeBtw-1.1.0-linux-x86_64.tar.gz
+curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.1.0/EasyModeBtw-1.1.0-linux-x86_64.tar.gz.sha256
+sha256sum -c EasyModeBtw-1.1.0-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.1.0-linux-x86_64.tar.gz
+cd EasyModeBtw-1.1.0-linux-x86_64
 ```
 
 Install for your user:

@@ -4,7 +4,7 @@
 the white keys play the notes of the scale you pick with its root on middle C, and each key can
 play a chord of the scale instead, strummed like a guitar or broken into an arpeggio on the beat.
 
-Version 1.0.0. To install it, see the [README](README.md).
+Version 1.1.0. To install it, see the [README](README.md).
 
 ## Getting started
 
@@ -19,18 +19,21 @@ Choose a KEY and a SCALE, then play the white keys from middle C upwards: every 
 scale. Then set CHORDS to Triads and play the white keys again: each one plays a chord. Open the
 PLAY page to see which notes every key sends.
 
-![The PLAY page: a white key fanning out into an F minor chord](images/play.png)
+![The PLAY page in F minor: a white key fanning out into a chord, the chords before it rising above](images/screenshot.png)
 
 ## The controls
 
-The header holds the page select (PLAY, CHORDS or ARP), the zoom select and the power switch.
-Below it one row holds the key and scale, CHORDS and ARP; under that is the page.
+The header holds the zoom select and the power switch. Below it one row holds three selectors:
+the key and scale, CHORDS and ARP. A click on a selector's icon or caption shows its page (PLAY,
+CHORDS or ARP), and a click on its value opens its list of tiles. The scales and chord sets have a
+little keyboard with their notes lit, the chord sets showing what they play on the key you last
+held; the arp orders have their stairs. Hover a tile and it performs. Under the row is the page.
 
 | Control | Range | Default | What it does |
 | --- | --- | --- | --- |
 | **Power switch** (top right) | On / Off | On | Off, every event passes through unchanged. |
 | **KEY** | C to B | C | The scale's root: the note middle C plays. |
-| **SCALE** | 14 scales | Major | The scale the white keys walk through. |
+| **SCALE** | 14 scales | Chromatic | The scale the white keys walk through. |
 | **CHORDS** | Off, Triads, Sevenths, Sus2, Sus4, Add9, Jazz, Bossa, Soul, Folk, Power | Off | Off plays one note per key; the others a chord on every key. |
 | **ARP** | Off, Up, Down, Up-Down, Converge, As Played, Chord, Random, Piano | Off | Off sends each key's note or chord at once; the others play it one note after another on the beat. |
 | **Strum switch** (CHORDS page) | On / Off | Off | Off, a chord's notes start together. |
@@ -40,9 +43,9 @@ Below it one row holds the key and scale, CHORDS and ARP; under that is the page
 | **RATE** (ARP page) | 1/4, 1/8., 1/8, 1/8T, 1/16, 1/16T, 1/32 | 1/16 | How far apart the arp's steps are. |
 | **RANGE** (ARP page) | 1 to 4 | 1 | How many times the run plays, each time higher. |
 | **STEP** (ARP page) | Octave, 2nd, 3rd, 4th, 5th, 6th | Octave | How far each repeat climbs: an octave, or that far up the scale, so it never leaves the key. |
-| **LENGTH** (ARP page) | 0.05 to 2 steps | 0.5 step | How long each note lasts. 1 step lasts until the next note; more overlaps it. |
-| **HOLD** (ARP page) | On / Off | Off | Let go and the arp plays on, until the next chord you play after letting every key go. |
-| **RHYTHM** (ARP page) | Straight and 12 rhythms | | Loads a rhythm into the step ring. |
+| **GATE LENGTH** (ARP page) | 5 to 100 % | 50 % | How long each note lasts, as a share of its step. 100 % lasts until the next note. |
+| **HOLD** (ARP page, the sustain pedal) | On / Off | Off | Let go and the arp plays on, until the next chord you play after letting every key go. |
+| **Rhythm shelf** (ARP page) | Straight and 12 rhythms | | Loads a rhythm into the step ring. |
 | **Step ring** (ARP page) | 1 to 32 steps | 16, all playing | Which steps play and how loud. Saved with the project. |
 | **Zoom** (header) | 100 to 200 % | 100 % | Sizes the window. |
 
@@ -67,8 +70,8 @@ Roots C to F sit on or above middle C, and F# to B just below it, so the playabl
 centred. A five-note pentatonic repeats every five white keys, so your hands cover more than an
 octave for the same reach, which makes fast runs easy.
 
-**Chromatic** plays every key, black ones too, each its own note moved so middle C plays the root:
-in C, the keyboard as it is.
+**Chromatic**, where a new instance starts, plays every key, black ones too, each its own note moved
+so middle C plays the root: in C, the keyboard as it is.
 
 ### Chords
 
@@ -81,15 +84,16 @@ With CHORDS on, each key plays a chord built on its note.
 - **Power:** the root and a perfect fifth on every key, as rock plays it.
 
 The black keys play a major chord on their own note (bII, bIII, #IV, bVI, bVII), the chords songs
-borrow from outside the key. Each chord is voiced to move as little as it can from the one before,
-so a progression sounds smooth without thinking about inversions.
+borrow from outside the key. Each chord plays in root position on the note its key plays alone, the
+same notes the arp plays from.
 
 The **CHORDS page** shows the last four seconds of notes with each chord's name, the strum, and a
 key map: one octave of keys, each naming the chord it plays. The chord sounding glows on its key,
-and three chords that would sound good next are lit on theirs. Click a key on the map to hear its
-chord: near its top it plays soft, near its foot loud.
+and three chords that would sound good next are lit on theirs and named after NEXT. Where a white
+and a black key play the same chord, the white one lights. Click a key on the map to hear its
+chord, in the octave of the last note you played: near its top it plays soft, near its foot loud.
 
-![The CHORDS page in F minor, triads strummed over 60 ms](images/screenshot.png)
+![The CHORDS page in F minor, triads strummed over 60 ms](images/chords.png)
 
 ### Strum
 
@@ -99,7 +103,7 @@ high the notes come evenly; high to low they speed up, as an up stroke does. Sta
 40 ms for a soft strum and 60 to 100 ms for a slow, harp-like one.
 
 The direction select picks up and down in turn, only up or only down. The voicing select lays
-each chord out **Close**, near the chord before, or as a **Guitar** grips it: the root low in the
+each chord out **Close**, in root position, or as a **Guitar** grips it: the root low in the
 bass, then the fifth, the root or seventh, the third and the fifth again. The strum only delays
 notes, so it adds no latency.
 
@@ -117,11 +121,21 @@ beat. While the transport stands it runs at the host's tempo from the first key.
 RANGE plays the run up to four times, each time higher by STEP. A chord played a little late still
 starts on its root.
 
-The **ARP page** has the step ring. Click a step to turn it on or off, drag it towards the centre
+The **ARP page** shows the stairs: what the arp plays over one turn of its rhythm, a ball hopping
+from note to note with the note's name and the ring's rests as gaps. RATE, RANGE, STEP and GATE
+LENGTH are in their header: click one for its menu, or drag it up and down, or scroll. Drag the end
+of any note to set GATE LENGTH.
+
+Beside the stairs is the step ring. Click a step to turn it on or off, drag it towards the centre
 to make it softer and away to make it louder, and double-click it for full. Drag around the ring
-elsewhere to turn the rhythm, and drag the number of steps up or down to change it. RHYTHM loads a
-pattern into the ring: Straight, eight of the commonest broken-chord bars in pop piano, and the
+elsewhere to turn the rhythm, and drag the number of steps up or down to change it. The shelf of
+tiny rings loads a pattern into it: hover one to see it over the big ring with its name, and click
+to load it. It has Straight, eight of the commonest broken-chord bars in pop piano, and the
 tresillo, cinquillo, bossa and bell rhythms.
+
+Below are the keys from the CHORDS page, playable with the mouse, with the chords to play next lit
+on them; with CHORDS Off each key names the note it plays. HOLD is the sustain pedal beside them:
+click to stomp it, and it stays down.
 
 ![The ARP page playing Up-Down over two octaves](images/arp.png)
 
@@ -139,8 +153,10 @@ it records the plugin's output.
 - **Latency:** none. The strum and the arp only delay notes.
 - **Automation:** KEY, SCALE, CHORDS and ARP changes take effect at the exact sample they are drawn
   at.
-- **Saved projects:** a project saved with 0.1.x plays as before, except one saved with SCALE on
-  Chromatic, which now plays every key.
+- **Saved projects:** a project saved with 1.0 keeps its settings, but its chords now play in root
+  position on each key's own note, so one using CHORDS sounds different. A GATE LENGTH saved above
+  100 % keeps its value until you touch the control. A project saved with 0.1.x plays as before,
+  except one saved with SCALE on Chromatic, which now plays every key.
 - **Changing settings while you play:** a held note keeps sounding until you let go of its key, and
   then the right notes end, so nothing gets stuck. Switching ARP or the power switch ends what
   sounds; press the keys again.
