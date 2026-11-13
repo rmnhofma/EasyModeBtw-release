@@ -19,11 +19,11 @@ It runs natively on Linux, with no network access and no telemetry.
 
 ## Features
 
-- **14 scales on 12 keys:** Chromatic, Major, Natural, Harmonic and Melodic Minor, Dorian, Phrygian, Lydian, Mixolydian, Locrian, Major and Minor Pentatonic, Blues and Whole Tone.
-- **Chords on every key:** Triads, Sevenths, Sus2, Sus4, Add9 or Power, or the chord Jazz, Bossa, Soul or Folk most often puts on that note. The black keys play borrowed major chords.
+- **20 scales on 12 keys:** Chromatic, Major, Natural, Harmonic and Melodic Minor, Dorian, Phrygian, Lydian, Mixolydian, Locrian, Major and Minor Pentatonic, Blues, Whole Tone, Spanish Phrygian, Double Harmonic, Hungarian Minor, Hirajoshi, In Sen and Lydian Dominant.
+- **Chords on every key:** Triads, Sevenths, Sus2, Sus4, Add9 or Power, or the chord Jazz, Bossa, Soul or Folk most often puts on that note. Or Thirds, Sixths and Octaves: each key's note with one partner above it, for a harmonised melody. The black keys play borrowed major chords.
 - **A key map that suggests:** each key names the chord it plays, and three good chords to play next light up.
 - **Strum:** a chord's notes start one after another, up to 100 ms, up and down in turn, one way, or each strum at random. No added latency.
-- **Arpeggiator on the host's beat:** eight patterns, from Up and Down to a pop-piano figure, 1/4 to 1/32 with dotted and triplet rates, up to 4 repeats climbing an octave or up the scale, swing, stairs that show what it plays, and a rhythm ring of up to 32 steps with a shelf of 26 rhythms.
+- **Arpeggiator on the host's beat:** eight patterns, from Up and Down to a pop-piano figure, 1/4 to 1/32 with dotted and triplet rates, up to 4 repeats climbing an octave or up the scale, swing, stairs that show what it plays, and a rhythm ring of up to 32 steps with a shelf of 26 rhythms, whose steps can roll two to four times.
 - **HOLD on a sustain pedal:** let go and what the keys play goes on, in every mode.
 - **See what you play:** the PLAY page draws a thread from every key you hold to the notes it sends. Click the keys with the mouse to try everything without a keyboard.
 - **No stuck notes:** a note-off always ends the notes its note-on started, even if you change the key, scale or chords while holding it.
@@ -37,10 +37,10 @@ Download the latest version from the [Releases page](https://github.com/jelly-co
 or with these commands:
 
 ```bash
-curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz
-curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz.sha256
-sha256sum -c EasyModeBtw-1.2.0-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.2.0-linux-x86_64.tar.gz
-cd EasyModeBtw-1.2.0-linux-x86_64
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.5/EasyModeBtw-1.2.5-linux-x86_64.tar.gz
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.5/EasyModeBtw-1.2.5-linux-x86_64.tar.gz.sha256
+sha256sum -c EasyModeBtw-1.2.5-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.2.5-linux-x86_64.tar.gz
+cd EasyModeBtw-1.2.5-linux-x86_64
 ```
 
 Install for your user:

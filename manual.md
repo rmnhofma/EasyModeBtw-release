@@ -4,7 +4,7 @@
 the white keys play the notes of the scale you pick with its root on middle C, and each key can
 play a chord of the scale instead, strummed like a guitar or broken into an arpeggio on the beat.
 
-Version 1.2.0. To install it, see the [README](README.md).
+Version 1.2.5. To install it, see the [README](README.md).
 
 ## Getting started
 
@@ -34,8 +34,8 @@ page. Rest the pointer on any control and a tooltip says what it does.
 | --- | --- | --- | --- |
 | **Power switch** (top right) | On / Off | On | Off, every event passes through unchanged. |
 | **KEY** | C to B | C | The scale's root: the note middle C plays. |
-| **SCALE** | 14 scales | Chromatic | The scale the white keys walk through. |
-| **CHORDS** | Off, Triads, Sevenths, Sus2, Sus4, Add9, Jazz, Bossa, Soul, Folk, Power | Off | Off plays one note per key; the others a chord on every key. |
+| **SCALE** | 20 scales | Chromatic | The scale the white keys walk through. |
+| **CHORDS** | Off, Triads, Sevenths, Sus2, Sus4, Add9, Jazz, Bossa, Soul, Folk, Power, Thirds, Sixths, Octaves | Off | Off plays one note per key; the others a chord, or a note with a partner, on every key. |
 | **ARP** | Off, Up, Down, Up-Down, Converge, As Played, Chord, Random, Piano | Off | Off sends each key's note or chord at once; the others play it one note after another on the beat. |
 | **Strum switch** (CHORDS page) | On / Off | Off | Off, a chord's notes start together. |
 | **STRUM** (CHORDS page) | 0 to 100 ms | 20 ms | How long a three-note chord takes to strum, first note to last. Drag on the strum display to set it. |
@@ -88,6 +88,14 @@ With CHORDS on, each key plays a chord built on its note.
 - **Jazz, Bossa, Soul, Folk:** the chord that genre most often puts on each note, counted from
   thousands of lead sheets. In C major, Jazz plays Dm7 on D, G7 on G, Cmaj7 on C and A7 on A.
 - **Power:** the root and a perfect fifth on every key, as rock plays it.
+- **Thirds, Sixths, Octaves:** the key's own note with one partner above it, for a melody that
+  comes out harmonised: the third or the sixth from the scale, or the octave. A black key takes a
+  major third or a major sixth. The key map names each key's two notes; no chord is named or
+  suggested. With the strum on, the partner follows like a grace note, and the arp runs over the
+  two.
+
+In Double Harmonic and Hungarian Minor a few chords have no name: their keys show the notes they
+play.
 
 The black keys play a major chord on their own note (bII, bIII, #IV, bVI, bVII), the chords songs
 borrow from outside the key. Each chord plays in root position on the note its key plays alone, the
@@ -143,7 +151,11 @@ or take it out.
 
 Beside the stairs is the step ring. Click a step to turn it on or off, drag it towards the centre
 to make it softer and away to make it louder, and double-click it for full. Drag around the ring
-elsewhere to turn the rhythm, and drag the number of steps up or down to change it. The shelf of
+elsewhere to turn the rhythm, and drag the number of steps up or down to change it. Right-click a
+step that plays to roll it: it plays its note two, three or four times in its own length, one more
+with each click, and after four once again. Its dot is cut into as many slices, the stairs show as
+many short notes, and hovering it says `3x`. GATE LENGTH is each strike's share of its part of the
+step; with ARP on Chord the whole chord is struck again. A roll is saved with the rhythm. The shelf of
 tiny rings loads a pattern into it: hover one to see it over the big ring with its name, and click
 to load it. Its first row has Straight, eight of the commonest broken-chord bars in pop piano, and
 the tresillo, cinquillo, bossa and bell rhythms. Its second row has thirteen more, most of them
@@ -189,7 +201,7 @@ it records the plugin's output.
 - **Other MIDI:** pitch bend, mod wheel and other CCs, channel pressure and program changes pass
   through untouched.
 - **Zoom:** the project remembers it, and a new window opens at the zoom you last chose in any
-  PluginsBTW plugin.
+  JellyComet plugin.
 - **Hosts:** the CLAP passes `clap-validator`.
 - **Display:** X11, or XWayland on a Wayland desktop, with a Vulkan driver.
 
