@@ -51,7 +51,7 @@ page. Rest the pointer on any control and a tooltip says what it does.
 | **Zoom** (header) | 100 to 200 % | 100 % | Sizes the window. |
 
 The version is in the bottom-right corner, and clicking the logo opens
-[the plugin's page](https://rmnhofma.github.io/plugins/easymodebtw/).
+[the plugin's page](https://jelly-comet.github.io/plugins/easymodebtw/).
 
 ## How to use it
 

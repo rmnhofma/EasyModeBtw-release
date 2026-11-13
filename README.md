@@ -33,12 +33,12 @@ It runs natively on Linux, with no network access and no telemetry.
 
 ## Install
 
-Download the latest version from the [Releases page](https://github.com/rmnhofma/EasyModeBtw-release/releases),
+Download the latest version from the [Releases page](https://github.com/jelly-comet/EasyModeBtw-release/releases),
 or with these commands:
 
 ```bash
-curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz
-curl -LO https://github.com/rmnhofma/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz.sha256
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.0/EasyModeBtw-1.2.0-linux-x86_64.tar.gz.sha256
 sha256sum -c EasyModeBtw-1.2.0-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.2.0-linux-x86_64.tar.gz
 cd EasyModeBtw-1.2.0-linux-x86_64
 ```
