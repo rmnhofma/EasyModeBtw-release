@@ -37,10 +37,10 @@ Download the latest version from the [Releases page](https://github.com/jelly-co
 or with these commands:
 
 ```bash
-curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.5/EasyModeBtw-1.2.5-linux-x86_64.tar.gz
-curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.5/EasyModeBtw-1.2.5-linux-x86_64.tar.gz.sha256
-sha256sum -c EasyModeBtw-1.2.5-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.2.5-linux-x86_64.tar.gz
-cd EasyModeBtw-1.2.5-linux-x86_64
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.6/EasyModeBtw-1.2.6-linux-x86_64.tar.gz
+curl -LO https://github.com/jelly-comet/EasyModeBtw-release/releases/download/v1.2.6/EasyModeBtw-1.2.6-linux-x86_64.tar.gz.sha256
+sha256sum -c EasyModeBtw-1.2.6-linux-x86_64.tar.gz.sha256 && tar xzf EasyModeBtw-1.2.6-linux-x86_64.tar.gz
+cd EasyModeBtw-1.2.6-linux-x86_64
 ```
 
 Install for your user:
@@ -72,7 +72,7 @@ rm -rf ~/.clap/easymodebtw.clap ~/.vst3/easymodebtw.vst3
 
 ## Requirements
 
-- Linux x86-64 with glibc 2.31 or newer (Ubuntu 20.04, Debian 11, Fedora 32 and newer)
+- Linux x86-64 on a CPU with AVX2 (Intel Core from 2013, AMD from 2015), with glibc 2.31 or newer (Ubuntu 20.04, Debian 11, Fedora 32 and newer)
 - A CLAP host
 - X11 or XWayland, and a Vulkan driver for the editor
 

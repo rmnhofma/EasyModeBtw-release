@@ -4,7 +4,7 @@
 the white keys play the notes of the scale you pick with its root on middle C, and each key can
 play a chord of the scale instead, strummed like a guitar or broken into an arpeggio on the beat.
 
-Version 1.2.5. To install it, see the [README](README.md).
+Version 1.2.6. To install it, see the [README](README.md).
 
 ## Getting started
 
